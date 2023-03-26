@@ -29,7 +29,7 @@ alias scrot exec scrot -F ~/Pictures/screenshot-`date +%F`.png
 alias volume-up exec pamixer -i 5
 alias volume-down exec pamixer -d 5
 alias volume-mute exec pamixer -t
-bind space exec rofi -show combi
+bind space exec rofi -i -show drun -modi drun -show-icons
 definekey top Print scrot
 definekey top XF86AudioRaiseVolume volume-up
 definekey top XF86AudioLowerVolume volume-down
