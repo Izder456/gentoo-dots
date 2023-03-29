@@ -1,0 +1,127 @@
+! xwindow stuffs
+xterm*scrollBar: false
+xterm*faceName: GohuFont Nerd Font
+xterm*faceSize: 12
+xterm*renderFont: true
+xterm*internalBorder: 16
+xterm*letterSpace: 1
+*allowSendEvents: true
+*imLocale: en_US.UTF-8
+*intensityStyles: true
+xterm*loginShell: true
+xterm*savelines: 16384
+
+URxvt.font: xft:GohuFont Nerd Font:style=Regular:size=12
+URxvt.boldFont: xft:GohuFont Nerd Font:style=Bold:size=12
+URxvt.italicFont: xft:GohuFont Nerd Font:style=Italic:size=12
+URxvt.boldItalicFont: xft:GohuFont Nerd Font:style=Bold Italic:size=12
+URxvt.letterSpace: 0
+URxvt.lineSpace: 0
+URxvt.geometry: 240x84
+URxvt.internalBorder: 24
+URxvt.cursorBlink: true
+URxvt.cursorUnderline: false
+URxvt.saveline: 16385
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.urgentOnBell: true
+URxvt.depth: 24
+URxvt.iso14755: false
+
+URxvt.keysym.Shift-Up: command:\033]720;1\007
+URxvt.keysym.Shift-Down: command:\033]721;1\007
+URxvt.keysym.Control-Up: \033[1;5A
+URxvt.keysym.Control-Down: \033[1;5B
+URxvt.keysym.Control-Right: \033[1;5C
+URxvt.keysym.Control-Left: \033[1;5D
+
+URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select,resize-font
+
+URxvt.copyCommand: xclip -i -selection clipboard
+URxvt.pasteCommand: xclip -o -selection clipboard
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_excaped
+URxvt.keysym.M-Excape: perl:keyoard-select:activate
+URxvt.keysym.M-s: perl:keyoard-select:search
+URxvt.keysym.M-u: perl:url-select:select_next
+
+URxvt.urlLauncher: firefox
+URxvt.underlineURLs: true
+URxvt.urlButton: 1
+
+URxvt.keysym.M-plus: resize-font:smaller
+URxvt.keysym.M-minus: resize-font:bigger
+URxvt.keysym.M-equals: resize-font:reset
+URxvt.keysym.M-question: resize-font:show
+
+! Font Rendering Stuffs
+Xft.dpi: 96
+Xft.rgba: rgb
+Xft.antialias: true
+Xft.autohint: false
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcddefault
+
+URxvt.color24:  #076678
+URxvt.color66:  #427b58
+URxvt.color88:  #9d0006
+URxvt.color96:  #8f3f71
+URxvt.color100: #79740e
+URxvt.color108: #8ec07c
+URxvt.color109: #83a598
+URxvt.color130: #af3a03
+URxvt.color136: #b57614
+URxvt.color142: #b8bb26
+URxvt.color167: #fb4934
+URxvt.color175: #d3869b
+URxvt.color208: #fe8019
+URxvt.color214: #fabd2f
+URxvt.color223: #ebdbb2
+URxvt.color228: #f2e5bc
+URxvt.color229: #fbf1c7
+URxvt.color230: #f9f5d7
+URxvt.color234: #1d2021
+URxvt.color235: #282828
+URxvt.color236: #32302f
+URxvt.color237: #3c3836
+URxvt.color239: #504945
+URxvt.color241: #665c54
+URxvt.color243: #7c6f64
+URxvt.color244: #928374
+URxvt.color245: #928374
+URxvt.color246: #a89984
+URxvt.color248: #bdae93
+URxvt.color250: #d5c4a1
+
+! hard contrast: *background: #1d2021
+*background: #282828
+! soft contrast: *background: #32302f
+*foreground: #ebdbb2
+! Black + DarkGrey
+*color0:  #282828
+*color8:  #928374
+! DarkRed + Red
+*color1:  #cc241d
+*color9:  #fb4934
+! DarkGreen + Green
+*color2:  #98971a
+*color10: #b8bb26
+! DarkYellow + Yellow
+*color3:  #d79921
+*color11: #fabd2f
+! DarkBlue + Blue
+*color4:  #458588
+*color12: #83a598
+! DarkMagenta + Magenta
+*color5:  #b16286
+*color13: #d3869b
+! DarkCyan + Cyan
+*color6:  #689d6a
+*color14: #8ec07c
+! LightGrey + White
+*color7:  #a89984
+*color15: #ebdbb2
+
+*.activeBackground: #1d2021
+*.activeForeground: #32302f
