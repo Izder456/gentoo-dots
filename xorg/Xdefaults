@@ -50,10 +50,10 @@ URxvt.urlLauncher: firefox
 URxvt.underlineURLs: true
 URxvt.urlButton: 1
 
-URxvt.keysym.C-minus: resize-font:smaller
-URxvt.keysym.C-plus: resize-font:bigger
-URxvt.keysym.C-equal: resize-font:reset
-URxvt.keysym.C-question: resize-font:show
+URxvt.keysym.M-plus: resize-font:smaller
+URxvt.keysym.M-minus: resize-font:bigger
+URxvt.keysym.M-equals: resize-font:reset
+URxvt.keysym.M-question: resize-font:show
 
 ! Font Rendering Stuffs
 Xft.dpi: 96
